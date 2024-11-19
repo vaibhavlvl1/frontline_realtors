@@ -1,0 +1,682 @@
+/* root colors */
+
+:root {
+  --primary-navy-blue: #2a5298;
+  --primary-muted-gold: #d4af37;
+
+  --secondary-light-grey: #f5f5f5;
+  --secondary-soft-white: #ffffff;
+
+  --accent-emerald-green: #2a9d8f;
+
+  --accent-deep-burgundy: #6a0e2e;
+}
+
+/* general styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+svg {
+  width: 100%;
+}
+
+body {
+  /* min-height: 100vh; */
+  position: relative;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif; /* Roboto as the primary font, Arial as fallback */
+}
+
+.scroll-container {
+  height: auto;
+}
+
+/******* start hero-section *************/
+
+/******** navbar starts  *********/
+
+nav {
+  height: 100px;
+  background-color: transparent;
+  position: relative;
+  z-index: 99;
+  transition: top 0.5s linear;
+  padding: 10px 0;
+  backdrop-filter: blur(100px);
+  /* box-sizing: content-box; */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+
+.company-name-nav {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.brand {
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.brand img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.menu-bar a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  /* padding: 5px 15px; */
+  /* border-radius: 20px; */
+}
+
+.menu-bar a:hover {
+  color: #d4af37 !important;
+  background: transparent;
+}
+
+.stricky-nav {
+  background-color: #2a5298;
+  position: sticky;
+  transition: linear top 1s;
+  border-bottom: none;
+  /* padding-top: 5px; */
+  /* box-sizing: content-box; */
+  top: 0;
+}
+
+/******** navbar ends  *********/
+
+/********** start Carousel stylings *********/
+
+/* Carousel container */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #2a5298 20%, #2a529829);
+  height: 100%;
+  width: 100%;
+}
+
+/* Slide styling */
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  animation: zoomInHeroImage 9s infinite linear forwards;
+}
+
+/* Active slide */
+.carousel-slide.inview {
+  opacity: 1;
+  overflow: hidden;
+}
+
+@keyframes zoomInHeroImage {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/********** end Carousel stylings *********/
+
+/************** start hero content  *************/
+
+.hero-section-carousel {
+  width: 100%;
+  transform: translateY(-90px);
+  position: relative;
+}
+
+.hero-content-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+}
+
+.hero-section-content {
+  color: #fff;
+}
+
+.company-name {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #f2a65a;
+  font-weight: 600;
+}
+
+.company-name-subheading {
+  font-family: tangerine, sans-serif;
+  font-size: 40px;
+}
+
+.hero-button-container button {
+  background-color: #d4af37;
+  color: #fff;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.hero-button-container button:hover {
+  box-shadow: 0px 0px 10px #fff;
+}
+
+/************** end hero content  *************/
+
+/******* end hero-section *************/
+
+/****** start properties slider ******/
+.featured-properties-slider {
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  border: none;
+  /* border: var(--accent-deep-burgundy) 1px solid; */
+}
+
+.card img {
+  margin-bottom: 20px;
+}
+
+.property-card-overlay {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+
+.property-price {
+  width: 100%;
+  top: 50%;
+  background-color: #2a5298;
+  text-align: center;
+}
+
+.property-featured {
+  background-color: #d4af37;
+  text-transform: uppercase;
+  top: 5px;
+  left: 5px;
+  padding: 2px;
+  font-size: 13px;
+}
+
+.property-status {
+  background-color: #2a9d8f;
+  text-transform: uppercase;
+  right: 5px;
+  top: 5px;
+  padding: 2px;
+  font-size: 13px;
+}
+
+.property-title {
+  text-align: center;
+}
+.property-icons {
+  width: 100%;
+  text-align: center;
+}
+
+.card-read-more {
+  width: 100%;
+  color: var(--accent-deep-burgundy);
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.card-read-more span {
+  position: relative;
+  z-index: 5;
+}
+
+.card-read-more::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  background-color: #2a9d8f;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+
+.card-read-more:hover::after {
+  left: 0;
+}
+
+.card-read-more:hover span {
+  color: #fff;
+}
+
+/****** end properties slider ******/
+
+/******** start about us  ***********/
+
+.about-us {
+  background: linear-gradient(to left, #2a529891 50%, #2a529895),
+    url("../images/about-us-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card {
+  width: 190px;
+  height: 190px;
+  background-color: #2a529850;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+  border: #fff 1px solid;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px 5px #00000029;
+}
+
+.service-card img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+/******** end about us  *************/
+
+/****** start why choose us  ******/
+.choose-us-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.choose-us {
+  /* width: 200px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  /* border: 1px solid #6a0e2e80; */
+  box-shadow: 0px 5px 5px #00000029;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.choose-us:hover {
+  box-shadow: 0px 10px 15px #999;
+  transform: scale(1.05);
+  border: none;
+}
+
+.choose-us img {
+  width: 50px;
+}
+
+.choose-us p {
+  margin: 0;
+}
+
+.counters {
+  display: flex; /* Arrange counters horizontally */
+  justify-content: space-around; /* Even spacing between counters */
+  text-align: center;
+  padding: 20px;
+}
+
+.counter-item {
+  flex: 1; /* Equal space for each counter */
+  margin: 10px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px #00000029;
+  padding-bottom: 15px;
+}
+
+.counter-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff; /* Customize with your brand color */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Add animation effect */
+}
+
+.counter-number:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.counter-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.plus {
+  font-size: 40px; /* Smaller size for superscript effect */
+  margin-right: 2px; /* Add space between + and the number */
+  color: #28a745; /* Optional: Style the plus sign with a different color */
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+
+/****** end why choose us ******/
+
+/****** start enquiry form  ******/
+
+.enquiry-form {
+  background: linear-gradient(300deg, #2a9d8f 30%, #2a5298, #2a9d8f);
+  background-size: 180% 180%;
+  animation: enquiry-form-animation 8s ease-in infinite;
+  width: 100%;
+}
+
+.enquiry-form p {
+  color: #fff;
+}
+
+@keyframes enquiry-form-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-heading {
+  color: #fff;
+}
+
+/****** end enquiry form  *******/
+
+/****** start our team  ******/
+
+.team-card {
+  width: 100%;
+  box-shadow: 0px 10px 5px #00000029;
+  padding: 10px;
+  background: linear-gradient(to right, #ffffff99, #ffffff),
+    url("../images/hero/9954.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.member-name {
+  font-size: 25px;
+  font-family: oswald, sans-serif;
+}
+
+.member-role {
+  font-style: italic;
+}
+
+.team-img-container img {
+}
+
+@media (max-width: 992px) {
+  .team-img-container img {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/****** end our team  ******/
+
+/****** start customer testimonials  ******/
+
+.customer-testimonials {
+  background-color: #2a9d8f;
+}
+.testimonials-slider {
+  position: relative;
+  width: 100%;
+  /* max-width: 600px; */
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(#ffffff99, #ffffff, #ffffff99),
+    url("../images/hero/338.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-message {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+.slider-button:hover {
+  background-color: #333;
+}
+
+.testimonial-message {
+  font-size: 23px;
+}
+
+/****** end customer testimonials  *******/
+
+/****** start footer  ******/
+
+footer {
+  background-color: #2a5298;
+  color: #fff;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15 px;
+}
+
+.quick-links a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  /* margin-left: 20px; */
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-company {
+  color: #fff;
+  font-family: playfair, sans-serif;
+}
+
+.footer-subheading {
+  font-family: tangerine, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.footer-address h4 {
+  /* text-align: center; */
+}
+
+.copyright-section {
+  border-top: 1px solid #fff;
+}
+/****** end footer  ******/
+
+/******** utility classes  ********/
+
+.section-heading {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Oswald", Helvetica, sans-serif;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.tab-active {
+  color: #d4af37 !important;
+  text-decoration: underline !important;
+  /* background-color: #00000019; */
+}
+
+.whatsappIcon {
+  z-index: 99;
+  bottom: 15px;
+  right: 15px;
+  font-size: 60px;
+  position: fixed;
+  cursor: pointer;
+  color: #d4af37;
+}
