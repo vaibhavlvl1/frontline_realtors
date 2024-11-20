@@ -13,6 +13,22 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// mobile menu navigation
+
+let isMenuVisible = false;
+menuButton = document.querySelector(".mobile-menu-burger");
+mobileMenuPage = document.querySelector(".mobile-menu-container");
+
+menuButton.addEventListener("click", () => {
+  if (isMenuVisible == false) {
+    mobileMenuPage.style.right = "0";
+    isMenuVisible = true;
+  } else if (isMenuVisible == true) {
+    mobileMenuPage.style.right = "-100%";
+    isMenuVisible = false;
+  }
+});
+
 // owl carousel
 $(document).ready(function () {
   $("#propertyCarousel").owlCarousel({
