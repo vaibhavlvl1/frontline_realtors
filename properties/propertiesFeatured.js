@@ -24,7 +24,7 @@ const featuredProperties = [
   {
     id: "2",
     property_name: "dummy 2",
-    for_sale: true,
+    for_sale: false,
     price: "1000$",
     bedrooms: 3,
     bathrooms: 3,
@@ -90,7 +90,7 @@ const featuredProperties = [
   {
     id: "5",
     property_name: "dummy 1",
-    for_sale: true,
+    for_sale: false,
     price: "1000$",
     bedrooms: 3,
     bathrooms: 3,

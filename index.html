@@ -72,8 +72,8 @@
         >
         <div class="menu-bar">
           <a href="index.html" class="tab-active">Home</a>
-          <a href="index.html">Properties</a>
-          <a href="index.html">Contact</a>
+          <a href="properties.html">Properties</a>
+          <a href="contact.html">Contact</a>
         </div>
         <div class="mobile-menu-burger">
           <div class="line line-1"></div>
@@ -162,35 +162,7 @@
       <section class="featured-properties-slider pb-5">
         <div class="container">
           <h2 class="section-heading">Featured Properties</h2>
-          <div class="owl-carousel" id="propertyCarousel">
-            <div class="item">
-              <div class="card">
-                <img src="./properties/images/1105.jpg" alt="" />
-                <p class="property-price property-card-overlay">5000$</p>
-                <p class="property-status property-card-overlay">rent</p>
-                <p class="property-featured property-card-overlay">featured</p>
-                <div class="card-content">
-                  <h4 class="property-title">Property Tittle</h4>
-
-                  <p class="property-icons">
-                    <i class="fa-solid fa-bed" style="color: #2a5298"></i> : 5
-                    &nbsp;
-                    <i class="fa-solid fa-bath" style="color: #2a5298"></i> :2
-                    &nbsp;
-                    <i class="fa-solid fa-maximize" style="color: #2a5298"></i>
-                    :1280 sqft
-                  </p>
-                  <p class="text-center">
-                    <span style="color: #2a5298; font-weight: 600"
-                      >LOCATION</span
-                    >
-                    : Pune
-                  </p>
-                  <button class="card-read-more"><span>Read More</span></button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="owl-carousel" id="propertyCarousel"></div>
         </div>
       </section>
       <!-- end of of featured properties -->
@@ -314,7 +286,11 @@
               <p>We're here to help you every step of the way</p>
             </div>
             <div class="col-lg-6">
-              <form id="enquiry-form" onsubmit="submitToWhatsApp()">
+              <form
+                id="enquiry-form"
+                action="https://formsubmit.co/your@email.com"
+                method="post"
+              >
                 <div class="mb-3">
                   <p class="form-heading">Your Information</p>
                 </div>
@@ -421,7 +397,8 @@
                   Submit
                 </button>
                 <button
-                  type="submit"
+                  type="button"
+                  onclick="submitToWhatsApp()"
                   class="btn btn-outline-light enquiry-button"
                 >
                   Submit on WhatsApp
