@@ -273,7 +273,7 @@ nav {
   width: 60px;
   height: 60px;
   background-color: #2a5298 !important;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .owl-next :hover {
@@ -293,7 +293,7 @@ nav {
   height: 60px;
   background-color: #2a5298 !important;
   margin-right: 10px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .owl-prev:hover {
@@ -550,7 +550,8 @@ nav {
 }
 
 .counter-item {
-  /* flex: 1 Equal space for each counter */
+  /* flex: 1; */
+  min-width: 200px;
   margin: 10px;
   position: relative;
   border-radius: 30px;
@@ -583,6 +584,12 @@ nav {
   position: absolute;
   right: 50px;
   top: 0;
+}
+
+@media (max-width: 992px) {
+  .choose-us {
+    justify-content: start;
+  }
 }
 
 /****** end why choose us ******/
@@ -628,6 +635,7 @@ nav {
     url("../images/hero/9954.jpg");
   background-attachment: fixed;
   background-position: center center;
+  border-bottom: 5px solid #2a5298;
 }
 
 .member-name {

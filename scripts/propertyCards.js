@@ -1,13 +1,11 @@
 import featuredProperties from "../properties/propertiesFeatured.js";
-import properties from "../properties/propertiesFeatured.js";
+// import properties from "../properties/propertiesFeatured.js";
 
 // code to  generate card from object
 
 let propertySlider = document.querySelector(".owl-carousel");
 
 function generateCard(propertyObject) {
-  console.log(propertyObject);
-  console.log(propertyObject.thumb_image);
   let item = document.createElement("div");
   item.classList.add("item");
 

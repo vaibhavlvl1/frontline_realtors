@@ -1,0 +1,115 @@
+.header-image {
+  height: 30vh;
+  background: linear-gradient(#00000070, #00000090),
+    url("../images/hero/hero-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* filter styles */
+
+.filter-inputs {
+  padding: 40px;
+  background-color: rgb(242, 245, 245);
+}
+
+.center-input {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-inputs select,
+.filter-inputs input {
+  padding: 5px;
+  outline: none;
+  border: 1px solid #2a9d8f;
+  background-color: #fff;
+  width: 190px;
+  margin-bottom: 20px;
+}
+
+#filter-list {
+  padding: 5px 15px;
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* all properties cards */
+.all-card-image {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+.all-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.all-properties-card {
+  display: flex;
+  border-bottom: 5px solid #2a5298;
+  margin-bottom: 20px;
+}
+
+.all-card-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.all-card-content {
+  padding-left: 20px;
+  background-color: #c6f5f0;
+}
+
+.all-card-content p {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.all-card-content span {
+  font-weight: 600;
+}
+
+.all-title {
+  margin-top: 5px;
+  font-size: 25px !important;
+  text-transform: uppercase;
+  font-family: playfair sans-serif;
+}
+
+#click-for-details {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  background-color: #2a9d8f;
+  color: #fff;
+  transition: all 0.2s linear;
+  text-transform: uppercase;
+}
+
+#click-for-details:hover {
+  background-color: #2a5298;
+}
+
+#click-for-details:hover i {
+  animation: stepup 0.5s linear infinite forwards;
+}
+
+@keyframes stepup {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
