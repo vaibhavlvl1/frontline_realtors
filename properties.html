@@ -71,7 +71,7 @@
             >Frontline Realtors</span
           ></a
         >
-        <div class="menu-bar">
+        <div class="menu-bar" style="border: none">
           <a href="index.html">Home</a>
           <a href="properties.html" class="tab-active">Properties</a>
           <a href="contact.html">Contact</a>
@@ -109,10 +109,8 @@
               <div class="row">
                 <div class="col-md-6 col-lg-3 center-input">
                   <select id="property_type">
-                    <option value="" selected disabled>
-                      Select Property Type
-                    </option>
-                    <option value="apartments">Apartments</option>
+                    <option value="" selected>Select Property Type</option>
+                    <option value="apartment">Apartments</option>
                     <option value="commercial">Commercial Spaces</option>
                     <option value="land">Land</option>
                     <option value="residential">Residential</option>
@@ -121,7 +119,7 @@
 
                 <div class="col-md-6 col-lg-3 center-input">
                   <select id="location">
-                    <option value="" selected disabled>Select Location</option>
+                    <option value="" selected>Select Location</option>
                     <option value="Kharadi Pune">Kharadi</option>
                     <option value="Mundhwa Pune">Mundhwa</option>
                     <option value="Keshavnagar Pune">Keshavnagar</option>
@@ -139,7 +137,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3 center-input">
                   <select id="rentorsale">
-                    <option value="" selected disabled>Rent/Sale</option>
+                    <option value="" selected>Rent/Sale</option>
                     <option value="rent">Rent</option>
                     <option value="sale">Sale</option>
                   </select>
@@ -149,6 +147,9 @@
                 <div class="col-12 center-input">
                   <button onclick="displayControl()" id="filter-list">
                     Filter
+                  </button>
+                  <button onclick="resetDisplay()" id="filter-reset">
+                    reset
                   </button>
                 </div>
               </div>
@@ -243,7 +244,8 @@
     <!-- property List -->
     <script type="module" src="./scripts/property_list.js"></script>
 
-    <script src="./scripts/custom.js"></script>
+    <!-- <script src="./scripts/custom.js"></script> -->
+    <script src="./scripts/custom_nonhome_pages.js"></script>
     <!-- scripts end -->
   </body>
 </html>

@@ -66,6 +66,10 @@ function generateCard(propertyObject) {
   let readMoreButton = document.createElement("button");
   readMoreButton.classList.add("card-read-more");
   readMoreButton.innerHTML = "<span>Read More</span>";
+  readMoreButton.setAttribute("data-id", propertyObject.id);
+  readMoreButton.addEventListener("click", () => {
+    window.location.href = `property.html?id=${propertyObject.id}`;
+  });
 
   card_content.appendChild(property_title);
   card_content.appendChild(propertyIcons);

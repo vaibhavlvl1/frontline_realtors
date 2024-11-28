@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const slides = document.querySelectorAll(".carousel-slide");
+const slides = document.querySelectorAll(".carousel-slideOwl");
 const totalSlides = slides.length;
 
 function showNextSlide() {

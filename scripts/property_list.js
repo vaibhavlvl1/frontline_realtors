@@ -30,7 +30,7 @@ function generateCard(property) {
                   <div class="all-card-content">
                     <p class="all-title">${property.property_name}</p>
                     <p class="all-type">${property.property_type}</p>
-                    <p class="all-location">${property.location} Pune</p>
+                    <p class="all-location">${property.location}</p>
                     <p class="all-property-type">${forRentorSale} @ ${property.price} rs</p>
                     <p class="all-icons">
                       <i class="fa-solid fa-bed" style="color: #2a5298"></i> : ${property.bedrooms}
@@ -38,7 +38,7 @@ function generateCard(property) {
                       <i class="fa-solid fa-bath" style="color: #2a5298"></i> : ${property.bathrooms}
                     </p>
                   </div>
-                  <button id="click-for-details">Click For Details <i class="fa-solid fa-caret-right"></i></button>
+                  <button id="click-for-details" data-id="${property.id}">Click For Details <i class="fa-solid fa-caret-right"></i></button>
                 </div>
                 
               </div>`;
@@ -109,3 +109,16 @@ window.displayControl = function () {
 };
 
 displayControl();
+
+window.resetDisplay = function () {
+  propertyList.innerHTML = "";
+  displayAllProperties(allProperties);
+};
+
+// event listener for click for details button
+
+document.querySelectorAll("#click-for-details").forEach((detailsButton) => {
+  detailsButton.addEventListener("click", (e) => {
+    window.location.href = `property.html?id=${e.target.dataset.id}`;
+  });
+});

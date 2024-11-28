@@ -18,17 +18,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
 
-    <!-- owl carousel properties slider -->
+    <!-- fancy box -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
 
     <!-- fontawesome -->
@@ -54,6 +48,10 @@
       href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/property.css" />
   </head>
   <body>
     <a class="whatsappIcon" href="https://wa.me/9579937573"
@@ -70,8 +68,8 @@
           ></a
         >
         <div class="menu-bar">
-          <a href="index.html" class="tab-active">Home</a>
-          <a href="properties.html">Properties</a>
+          <a href="index.html">Home</a>
+          <a href="properties.html " class="tab-active">Properties</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="mobile-menu-burger">
@@ -92,6 +90,125 @@
           <a href="./disclaimer.html">Disclaimer</a>
         </div>
       </div>
+
+      <section class="pb-5 property_details_page_0">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="./images/hero/1105.jpg" data-fancybox="gallery1">
+                <img
+                  src="./images/hero/1105.jpg"
+                  class="d-block w-100"
+                  alt="Image 1"
+                />
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="./images/hero/1777.jpg" data-fancybox="gallery1">
+                <img
+                  src="./images/hero/1777.jpg"
+                  class="d-block w-100"
+                  alt="Image 2"
+                />
+              </a>
+            </div>
+            <!-- Add more images -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="container mt-5">
+          <h2 class="section-heading">PROPERTY DETAILS</h2>
+          <h3 id="det-property-title"></h3>
+
+          <p id="property-details-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            minus, possimus maxime eos quaerat, labore voluptatem, dicta quae
+            fugiat magni reprehenderit? Veritatis ut minus quisquam hic? Aperiam
+            consectetur, itaque voluptatum blanditiis consequuntur aliquam
+            recusandae autem ducimus accusamus quos impedit odio?
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <table class="table table-striped property-details-table">
+                <tbody>
+                  <tr>
+                    <td>Property ID</td>
+                    <th id="det-prop-id">1</th>
+                  </tr>
+                  <tr>
+                    <td>Property Status</td>
+                    <th id="det-prop-status">Rent</th>
+                  </tr>
+                  <tr>
+                    <td>Price</td>
+                    <th id="det-prop-price">5000 $</th>
+                  </tr>
+                  <tr>
+                    <td>Property Type</td>
+                    <th id="det-prop-type">Residential</th>
+                  </tr>
+                  <tr>
+                    <td>Built Year</td>
+                    <th id="det-prop-built-year">2009</th>
+                  </tr>
+                  <tr>
+                    <td>Bedrooms</td>
+                    <th id="det-prop-bedrooms">3</th>
+                  </tr>
+                  <tr>
+                    <td>Bathrooms</td>
+                    <th id="det-prop-bathrooms">3</th>
+                  </tr>
+                  <tr>
+                    <td>Area</td>
+                    <th id="det-prop-area">2000</th>
+                  </tr>
+                  <tr>
+                    <td>Parking</td>
+                    <th id="det-prop-parking">1</th>
+                  </tr>
+                  <tr>
+                    <td>Furnishing</td>
+                    <th id="det-prop-furnishing">Fully Furnished</th>
+                  </tr>
+                  <tr>
+                    <td>Address</td>
+                    <th id="det-prop-address">H.no,Lane, area, Pune</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h5>Amenities and Features</h5>
+              <ul id="det-prop-amenities">
+                <li>Cycle Track</li>
+                <li>CCTV</li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-primary" onclick="submitPropInterest()">
+            Send Interest
+          </button>
+        </div>
+      </section>
+
       <footer class="pt-5 pb-5">
         <div class="container">
           <div class="row">
@@ -153,9 +270,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- owl carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- hero section slider js -->
     <script src="./scripts/carousel.js"></script>
@@ -166,7 +280,13 @@
     <!-- property cards -->
     <script type="module" src="./scripts/propertyCards.js"></script>
 
-    <script src="./scripts/custom.js"></script>
+    <!-- fancy box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <!-- <script src="./scripts/custom.js"></script> -->
+    <script src="./scripts/custom_nonhome_pages.js"></script>
+
+    <script type="module" src="./scripts/property.js"></script>
     <!-- scripts end -->
   </body>
 </html>

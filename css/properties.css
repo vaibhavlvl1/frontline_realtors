@@ -6,6 +6,10 @@
   background-size: cover;
 }
 
+.nav-container {
+  border: none;
+}
+
 /* filter styles */
 
 .filter-inputs {
@@ -29,6 +33,16 @@
 }
 
 #filter-list {
+  padding: 5px 15px;
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+#filter-reset {
   padding: 5px 15px;
   background-color: #2a9d8f;
   color: #fff;

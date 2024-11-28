@@ -1,0 +1,58 @@
+.header-image-contact {
+  height: 30vh;
+  background: linear-gradient(#00000070, #00000090),
+    url("../images/header-image-contact.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-container {
+  border: none;
+}
+
+.contact-section-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-section-address p {
+  font-size: 18px;
+  letter-spacing: 0.1px;
+}
+
+.contact-section-address span {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.contact-section-address p i {
+  color: #d4af37 !important;
+}
+
+.contact-section-address p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-section-address h4 {
+  color: #d4af37;
+  font-family: Playfair Display, Georgia, serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.social-icons-contact i {
+  font-size: 28px !important;
+  margin-right: 5px;
+  transition: all 0.2s linear;
+}
+
+.sic {
+  color: #d4af37;
+  cursor: pointer;
+}
+
+.sic:hover {
+  color: #2a5298;
+}

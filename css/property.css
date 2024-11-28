@@ -1,0 +1,7 @@
+.carousel-inner {
+  height: calc(100vh - 200px);
+}
+
+.nav-container {
+  border: none;
+}
