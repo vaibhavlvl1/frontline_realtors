@@ -228,7 +228,7 @@ nav {
   z-index: 5;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, #2a5298 10%, #2a529899);
+  background: linear-gradient(to top, #2a5298 10%, transparent);
   height: 100%;
   width: 100%;
 }

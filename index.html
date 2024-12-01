@@ -18,8 +18,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- custom styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- animation  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- owl carousel properties slider -->
     <link
@@ -54,6 +58,8 @@
       href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -122,18 +128,32 @@
           <div class="container hero-section-content">
             <div class="row">
               <div class="col-lg-6">
-                <h6>Welcome to</h6>
-                <h1 class="company-name">Frontline Realtors</h1>
-                <p class="company-name-subheading">
+                <h6 class="wow animate animate__fadeInLeft">Welcome to</h6>
+                <h1
+                  class="company-name wow animate animate__fadeInLeft"
+                  data-wow-delay=".2s"
+                >
+                  Frontline Realtors
+                </h1>
+                <p
+                  data-wow-delay=".4s"
+                  class="company-name-subheading wow animate animate__fadeInLeft"
+                >
                   Find Your Dream Home with Us
                 </p>
-                <p class="lead">
+                <p
+                  data-wow-delay=".6s"
+                  class="lead wow animate animate__fadeInLeft"
+                >
                   Discover properties in prime locations tailored to your needs
                   and lifestyle. Whether you’re looking for luxury apartments,
                   family homes, or investment opportunities, we’re here to guide
                   you
                 </p>
-                <div class="hero-button-container">
+                <div
+                  data-wow-delay="1s"
+                  class="hero-button-container wow animate animate__fadeInUp"
+                >
                   <button><a href="properties.html">Check Listings </a></button>
                   <button><a href="contact.html">Contact us</a></button>
                 </div>
@@ -151,7 +171,9 @@
       <!-- end of page end style section -->
 
       <!-- start of featured properties -->
-      <section class="featured-properties-slider pb-5">
+      <section
+        class="featured-properties-slider pb-5 wow animate animate__fadeIn"
+      >
         <div class="container">
           <h2 class="section-heading">Featured Properties</h2>
           <div class="owl-carousel" id="propertyCarousel"></div>
@@ -160,10 +182,15 @@
       <!-- end of of featured properties -->
 
       <!-- start about us -->
-      <section class="about-us pt-5 pb-5 bg-light mt-5">
+      <section
+        class="about-us pt-5 pb-5 bg-light mt-5 featured-properties-slider pb-5 wow animate animate__fadeIn"
+      >
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 pt-5 pb-5">
+            <div
+              data-wow-delay=".5s"
+              class="col-lg-6 pt-5 pb-5 featured-properties-slider pb-5 wow animate animate__fadeInLeft"
+            >
               <h2 class="section-heading text-white">About Us</h2>
               <p class="text-justify text-white">
                 Whether you're buying, selling, or investing, Frontline Realtors
@@ -182,22 +209,36 @@
                 and support needed to make informed decisions.
               </p>
             </div>
-            <div class="col-lg-6 service-bg pt-5 pb-5 position-relative">
+            <div
+              class="col-lg-6 service-bg pt-5 pb-5 position-relative featured-properties-slider pb-5 wow animate animate__fadeInRight"
+            >
               <h2 class="section-heading text-white">We Help you with</h2>
               <div class="card-container">
-                <div class="service-card">
+                <div
+                  class="service-card featured-properties-slider pb-5 wow animate animate__fadeIn"
+                  data-wow-delay=".8s"
+                >
                   <img src="./images/payment-method.png" alt="" />
                   <p class="fs-6">looking to buy</p>
                 </div>
-                <div class="service-card">
+                <div
+                  data-wow-delay=".8s"
+                  class="service-card featured-properties-slider pb-5 wow animate animate__fadeInDown"
+                >
                   <img src="./images/sale.png" alt="" />
                   <p class="fs-6">sell your home</p>
                 </div>
-                <div class="service-card">
+                <div
+                  data-wow-delay=".8s"
+                  class="service-card featured-properties-slider pb-5 wow animate animate__fadeInRight"
+                >
                   <img src="./images/rent.png" alt="" />
                   <p class="fs-6">rent a place</p>
                 </div>
-                <div class="service-card m-lg-auto">
+                <div
+                  data-wow-delay=".8s"
+                  class="service-card m-lg-auto featured-properties-slider pb-5 wow animate animate__fadeInUp"
+                >
                   <img src="./images/problem-solving.png" alt="" />
                   <p class="fs-6">Customized Solutions</p>
                 </div>
@@ -212,7 +253,9 @@
       <section class="why-choose-us mt-5 pt-5 pb-5 mb-5">
         <div class="container">
           <h2 class="section-heading">Why Choose Us</h2>
-          <div class="choose-us-card-container">
+          <div
+            class="choose-us-card-container wow animate animate__fadeInRight"
+          >
             <div class="row">
               <div class="col-lg-3">
                 <div class="choose-us">
@@ -240,7 +283,7 @@
               </div>
             </div>
           </div>
-          <div class="counters mt-5 pt-5">
+          <div class="counters mt-5 pt-5 wow animate animate__fadeInLeft">
             <div class="row">
               <div class="col-lg-3">
                 <div class="counter-item">
@@ -276,7 +319,7 @@
       <section class="enquiry-form pt-5 pb-5 mt-5 mb-5">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 wow animate animate__fadeInDown">
               <h2 class="section-heading text-white">Enquire Now</h2>
               <p>
                 Tell us what you need, and we’ll ensure our expert reaches out
@@ -287,7 +330,7 @@
 
               <p>We're here to help you every step of the way</p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 wow animate animate__fadeInUp">
               <form
                 id="enquiry-form"
                 action="https://formsubmit.co/your@email.com"
@@ -423,7 +466,7 @@
           <h2 class="section-heading">Meet the Team</h2>
           <div class="row team-card-container">
             <div class="col-lg-6 mb-4 mb-lg-0">
-              <div class="team-card">
+              <div class="team-card wow animate animate__fadeInLeft">
                 <div class="row">
                   <div
                     class="col-lg-6 team-img-container d-flex justify-content-center justify-content-lg-start mb-4 mb-lg-0"
@@ -450,7 +493,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="team-card">
+              <div class="team-card wow animate animate__fadeInRight">
                 <div class="row">
                   <div
                     class="col-lg-6 team-img-container d-flex justify-content-center justify-content-lg-start mb-4 mb-lg-0"
@@ -478,7 +521,7 @@
             </div>
           </div>
 
-          <div class="our-team-praise mt-5">
+          <div class="our-team-praise mt-5 wow animate animate__fadeInUp">
             <p>
               At Frontline Realtors, we pride ourselves on our team of
               experienced and dedicated professionals who bring passion,
@@ -493,7 +536,9 @@
       <!-- end Our Team  -->
 
       <!-- start customer testimonials -->
-      <section class="customer-testimonials pt-5 pb-5">
+      <section
+        class="customer-testimonials pt-5 pb-5 wow animate animate__backInLeft"
+      >
         <div class="container">
           <h2 class="section-heading text-white">What Our Clients Say !</h2>
           <div class="testimonials-slider">
@@ -597,6 +642,19 @@
 
     <!-- property cards -->
     <script type="module" src="./scripts/propertyCards.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./scripts/wowInit.js"></script>
+
+    <script>
+      new WOW({
+        boxClass: "wow", // Class to trigger animations
+        animateClass: "animate__animated", // Animate.css base class
+        offset: 100, // Distance to trigger animation (px)
+        mobile: true, // Enable animations on mobile
+        live: true, // Check for new elements (useful for dynamic content)
+      }).init();
+    </script>
 
     <script src="./scripts/custom.js"></script>
     <!-- scripts end -->
