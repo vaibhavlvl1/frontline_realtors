@@ -19,14 +19,10 @@
       crossorigin="anonymous"
     />
 
-    <!-- owl carousel properties slider -->
+    <!-- fancy box -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
 
     <!-- fontawesome -->
@@ -52,10 +48,10 @@
       href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <!-- custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/properties.css" />
+
+    <link rel="stylesheet" href="./css/property.css" />
   </head>
   <body>
     <a class="whatsappIcon" href="https://wa.me/9579937573"
@@ -71,9 +67,9 @@
             >Frontline Realtors</span
           ></a
         >
-        <div class="menu-bar" style="border: none">
+        <div class="menu-bar">
           <a href="index.html">Home</a>
-          <a href="properties.html" class="tab-active">Properties</a>
+          <a href="properties.html ">Properties</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="mobile-menu-burger">
@@ -95,77 +91,84 @@
         </div>
       </div>
 
-      <!-- start header image -->
-      <div class="header-image"></div>
-      <!-- end header image -->
+      <section class="pb-5">
+        <div class="container mt-5">
+          <h2 class="section-heading text-start">PRIVACY POLICY</h2>
+          <p>
+            Effective Date: 1 January 2025 <br />
 
-      <!-- section heading and filters -->
-      <section class="filters pt-5 pb-5">
-        <div class="container">
-          <h2 class="section-heading">ALL PROPERTIES</h2>
-          <div class="filter-containermt-3 mb-3">
-            <p>Filter By:</p>
-            <div class="filter-inputs">
-              <div class="row">
-                <div class="col-md-6 col-lg-3 center-input">
-                  <select id="property_type">
-                    <option value="" selected>Select Property Type</option>
-                    <option value="apartment">Apartments</option>
-                    <option value="commercial">Commercial Spaces</option>
-                    <option value="land">Land</option>
-                    <option value="residential">Residential</option>
-                  </select>
-                </div>
-
-                <div class="col-md-6 col-lg-3 center-input">
-                  <select id="location">
-                    <option value="" selected>Select Location</option>
-                    <option value="Kharadi Pune">Kharadi</option>
-                    <option value="Mundhwa Pune">Mundhwa</option>
-                    <option value="Keshavnagar Pune">Keshavnagar</option>
-                    <option value="Vimannagar Pune">Vimannagar</option>
-                    <option value="Dhanori Pune">Dhanori</option>
-                  </select>
-                </div>
-                <div class="col-md-6 col-lg-3 center-input">
-                  <input
-                    id="no-of-bedrooms"
-                    type="number"
-                    value=""
-                    placeholder="No of Bedrooms"
-                  />
-                </div>
-                <div class="col-md-6 col-lg-3 center-input">
-                  <select id="rentorsale">
-                    <option value="" selected>Rent/Sale</option>
-                    <option value="rent">Rent</option>
-                    <option value="sale">Sale</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 center-input">
-                  <button onclick="displayControl()" id="filter-list">
-                    Filter
-                  </button>
-                  <button onclick="resetDisplay()" id="filter-reset">
-                    reset
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+            Frontline Realtors is committed to protecting your privacy. This
+            Privacy Policy explains how we collect, use, disclose, and safeguard
+            your information when you visit our website [Your Website URL].
+            Please read this policy carefully to understand our views and
+            practices regarding your personal data and how we handle it.
+          </p>
         </div>
       </section>
-      <!-- end section heading and filters -->
+      <section class="pb-5 pt-5 bg-light">
+        <div class="container">
+          <h2 class="section-heading text-start">INFORMATION WE COLLECT</h2>
+          <p>
+            Personal Data <br />
+            We may collect personal information that you voluntarily provide to
+            us, such as:<br />
+            Name <br />
+            Email Address <br />
+            Phone Number <br />
+            Address <br />
+            Other details you provide via forms or inquiries
+          </p>
+          <p>
+            Non-Personal Data <br />
+            We may collect non-personal information, including: <br />
+            Browser type and version <br />
+            Device type and operating system<br />
+            IP address <br />
+            Website usage data (e.g., pages viewed, time spent on site)
+          </p>
+        </div>
+      </section>
+      <section class="pb-5 pt-5">
+        <div class="container">
+          <h2 class="section-heading text-start">
+            HOW WE USE YOUR INFORMATION
+          </h2>
+          <p>
+            We use the collected information for the following purposes: <br />
+            To provide, operate, and maintain our website <br />
+            To improve and personalize user experience <br />
+            To respond to inquiries and provide customer support <br />
+            To send promotional materials and updates (with your consent) <br />
+            To analyze usage trends and improve our services
+          </p>
+        </div>
+      </section>
 
-      <!-- start all properties list -->
+      <section class="pb-5 pt-5 bg-light">
+        <div class="container">
+          <h2 class="section-heading text-start">SHARING YOUR INFORMATION</h2>
+          <p>
+            We do not sell, rent, or trade your personal information to third
+            parties. However, we may share information with trusted third
+            parties, including: <br />
+
+            Service providers who assist us in operating our website or
+            conducting our business Compliance with legal obligations or to
+            protect our legal rights
+          </p>
+        </div>
+      </section>
       <section class="pt-5 pb-5">
         <div class="container">
-          <div class="row" id="all-property-list"></div>
+          <h2 class="section-heading text-start">CONTACT US</h2>
+          <p>
+            If you have any questions about this disclaimer, please contact us
+            at:<br />
+            Email: frontlinerealty@gmail.com <br />
+            Phone: 9579937573
+          </p>
         </div>
       </section>
-      <!-- end all properties list -->
 
       <footer class="pt-5 pb-5">
         <div class="container">
@@ -243,24 +246,23 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- owl carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- hero section slider js -->
     <script src="./scripts/carousel.js"></script>
 
     <!-- featured properties  -->
-    <!-- <script type="module" src="./properties/propertiesFeatured.js"></script> -->
+    <script type="module" src="./properties/propertiesFeatured.js"></script>
 
     <!-- property cards -->
-    <!-- <script type="module" src="./scripts/propertyCards.js"></script> -->
+    <script type="module" src="./scripts/propertyCards.js"></script>
 
-    <!-- property List -->
-    <script type="module" src="./scripts/property_list.js"></script>
+    <!-- fancy box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
     <!-- <script src="./scripts/custom.js"></script> -->
     <script src="./scripts/custom_nonhome_pages.js"></script>
+
+    <script type="module" src="./scripts/property.js"></script>
     <!-- scripts end -->
   </body>
 </html>

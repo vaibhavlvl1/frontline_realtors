@@ -30,7 +30,7 @@ html {
 }
 
 p {
-  font-size: 16px;
+  font-size: 15px;
   font-family: Montserrat, Arial, sans-serif;
 }
 
@@ -39,6 +39,10 @@ img {
 }
 svg {
   width: 100%;
+}
+
+a {
+  transition: 0.2s linear all;
 }
 
 body {
@@ -163,13 +167,15 @@ nav {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-weight: 700;
   /* padding: 5px 15px; */
   /* border-radius: 20px; */
 }
 
 .menu-bar a:hover {
-  color: #d4af37 !important;
+  color: gold !important;
   background: transparent;
+  font-weight: 700;
 }
 
 .stricky-nav {
@@ -335,7 +341,7 @@ nav {
 
 .company-name {
   font-family: "Playfair Display", Georgia, serif;
-  color: #f2a65a;
+  color: gold;
   font-weight: 600;
 }
 
@@ -486,7 +492,7 @@ nav {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   transition: transform 0.2s linear;
   cursor: pointer;
@@ -753,6 +759,15 @@ footer {
   margin-left: 15 px;
 }
 
+.link-container a i {
+  margin-right: 5px;
+  color: gold;
+}
+
+.link-container a:hover {
+  color: gold;
+}
+
 .quick-links a {
   color: #fff;
   cursor: pointer;
@@ -773,10 +788,25 @@ footer {
 .footer-subheading {
   font-family: tangerine, Arial, Helvetica, sans-serif;
   font-size: 30px;
+  color: gold;
+  font-weight: 700;
 }
 
 .copyright-section {
   border-top: 1px solid #fff;
+}
+
+.footer-address p i {
+  color: gold;
+}
+
+.footer-address a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-address a:hover {
+  color: gold;
 }
 /****** end footer  ******/
 
@@ -798,8 +828,8 @@ footer {
 }
 
 .tab-active {
-  color: #d4af37 !important;
-  text-decoration: underline !important;
+  color: gold !important;
+  font-weight: 700;
   /* background-color: #00000019; */
 }
 
@@ -810,5 +840,5 @@ footer {
   font-size: 60px;
   position: fixed;
   cursor: pointer;
-  color: #d4af37;
+  color: greenyellow;
 }
